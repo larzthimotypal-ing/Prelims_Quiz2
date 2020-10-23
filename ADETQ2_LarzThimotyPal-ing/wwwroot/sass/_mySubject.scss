@@ -1,0 +1,118 @@
+
+body{
+    background-color: rgb(21, 21, 21);
+    background-image: url(landing-page.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.landing-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 3rem auto 2rem;
+    padding: 1rem;
+
+    .subject-title{
+        font-size: 3rem;
+        text-align: center;
+        color: #fff;
+        margin: 3rem 0;
+    }
+
+    @media screen and (max-width: 768px){
+        .subject-title{
+            font-size: 2.6rem;
+            margin: 2rem 0;
+        }
+        
+    }
+
+    @media screen  and (max-width: 480px){
+        
+        .subject-title{
+            font-size: 2rem;
+        }
+    }
+    
+    .cta-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .self-introduction{
+            font-size: 2.2rem;
+            color: #fff;
+            letter-spacing: 2px;
+            margin: 1rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            .self-introduction{
+                font-size: 2rem;
+                letter-spacing: 1.8px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .self-introduction{
+                font-size: 1.6rem;
+                letter-spacing: 1.2px;
+                margin: .5rem 1rem 0;
+            }
+        }
+        .cta{
+            padding: 1rem;
+            font-weight: 600;
+            color: rgb(141, 141, 141);
+            background: rgb(39, 39, 39);
+            border-radius: 12px;
+            border: rgb(48, 48, 48) solid 1px;
+            border-bottom: none;
+            margin: 1rem;
+            margin-top: 3rem;
+            cursor: pointer;
+            //shadow
+            -webkit-box-shadow: 15px 12px 14px 2px rgba(176,176,176,1);
+            -moz-box-shadow: 15px 12px 14px 2px rgba(176,176,176,1);
+            box-shadow: 2px 2px 5px 4px rgb(16, 16, 16),-2px -3px 3px 2px rgb(102, 102, 102);
+                
+        }
+
+        .cta:hover,.cta:focus{
+            background: rgb(65, 65, 65);
+            border: rgb(72, 71, 71) solid 1px;
+            border-bottom: none;
+            transform: scale(1.05);
+            box-shadow: 2px 2px 5px 4px rgb(31, 31, 31),-2px -3px 3px 2px rgb(150, 150, 148);
+            color: rgb(223, 223, 223);
+        }
+        
+        .cta:focus{
+            outline: none;
+        }
+
+        .cta:active{
+            background: rgb(31, 31, 31);
+            border: rgb(49, 49, 49) 1px solid;
+            color: rgb(111, 111, 111);
+
+            a{
+                font-size: .9rem;
+            }
+        }
+
+        @media screen and (max-width: 768px){
+            .cta{
+                margin-top: 2rem;
+            }
+        }
+    }
+
+}
+    

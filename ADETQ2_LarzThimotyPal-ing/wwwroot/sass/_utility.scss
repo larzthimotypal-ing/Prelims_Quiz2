@@ -1,0 +1,22 @@
+*{
+    font-size: 16px;
+    font-family: $font-stack;
+    box-sizing: border-box;
+    line-height: 1.2;
+    margin: 0;
+
+    a{
+        text-decoration: none;
+    }   
+
+}
+
+.container{
+    max-width: 1100px;
+    padding: 0 30px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+
+

@@ -1,0 +1,236 @@
+* {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  line-height: 1.2;
+  margin: 0;
+}
+
+* a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 30px;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+body {
+  background: url(landingpage-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-color: #151515;
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 3rem auto 2rem;
+  padding: 1rem;
+}
+
+.landing-page .subject-title {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  margin: 3rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .landing-page .subject-title {
+    font-size: 2.6rem;
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .landing-page .subject-title {
+    font-size: 2rem;
+  }
+}
+
+.landing-page .cta-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page .cta-section .self-introduction {
+  font-size: 2.2rem;
+  color: #fff;
+  letter-spacing: 2px;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .landing-page .cta-section .self-introduction {
+    font-size: 2rem;
+    letter-spacing: 1.8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .landing-page .cta-section .self-introduction {
+    font-size: 1.6rem;
+    letter-spacing: 1.2px;
+    margin: .5rem 1rem 0;
+  }
+}
+
+.landing-page .cta-section .cta {
+  padding: 1rem;
+  font-weight: 600;
+  color: #8d8d8d;
+  background: #272727;
+  border-radius: 12px;
+  border: #303030 solid 1px;
+  border-bottom: none;
+  margin: 1rem;
+  margin-top: 3rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px 4px #101010, -2px -3px 3px 2px #666666;
+}
+
+.landing-page .cta-section .cta:hover, .landing-page .cta-section .cta:focus {
+  background: #414141;
+  border: #484747 solid 1px;
+  border-bottom: none;
+  transform: scale(1.05);
+  box-shadow: 2px 2px 5px 4px #1f1f1f, -2px -3px 3px 2px #969694;
+  color: #dfdfdf;
+}
+
+.landing-page .cta-section .cta:focus {
+  outline: none;
+}
+
+.landing-page .cta-section .cta:active {
+  background: #1f1f1f;
+  border: #313131 1px solid;
+  color: #6f6f6f;
+}
+
+.landing-page .cta-section .cta:active a {
+  font-size: .9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .landing-page .cta-section .cta {
+    margin-top: 2rem;
+  }
+}
+
+.body-like {
+  background: #151221;
+}
+
+.info-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  color: white;
+  background-color: #24232e;
+  width: 80%;
+  margin: auto;
+  padding: 3rem 2rem 2rem;
+}
+
+.content-title {
+  font-size: 2rem;
+}
+
+.content-larz {
+  margin: 1rem 0 2rem;
+  font-size: 1.4rem;
+  letter-spacing: 1.2px;
+  line-height: 2;
+}
+
+.content-larz .name {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-larz .name span {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.content-larz h1, .content-larz h2, .content-larz h3 {
+  margin: 12px 0;
+}
+
+.content .mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .content .pc {
+    display: none;
+  }
+  .content .mobile {
+    display: block;
+  }
+  .content .name span {
+    display: none;
+  }
+}
+
+.content .back-btn {
+  color: #bcaef8;
+  padding: 10px;
+  background: #090818;
+  border-radius: 30px;
+}
+
+.content .back-btn span {
+  display: none;
+}
+
+.content .back-btn:hover, .content .back-btn:focus {
+  outline: none;
+}
+
+.content .back-btn:hover span, .content .back-btn:focus span {
+  display: inline;
+}
+
+@media screen and (max-width: 768px) {
+  .info-page {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .info-page {
+    padding: 10px;
+  }
+  .content {
+    padding: 20px 20px;
+    width: 96%;
+  }
+  .content-title {
+    font-size: 1.4rem;
+  }
+  .content-larz .name {
+    font-size: 1rem;
+    letter-spacing: .2px;
+  }
+}
+
+a,a:hover,a:visited{
+    text-decoration: none;
+}
